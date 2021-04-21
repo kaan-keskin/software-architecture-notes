@@ -1,6 +1,10 @@
 # Fundamentals of Software Architecture: Extra Topics I
 
-**Author / Collector Agent:** Kaan Keskin
+**Author:** Kaan Keskin
+
+Date: April 2021
+
+Available at: https://github.com/kaan-keskin/software-architecture-notes
 
 **Resources:**
 
@@ -66,6 +70,20 @@ Dijkstra showed that the use of unrestrained jumps (**goto statements**) is harm
 
 **The notion of structured programming became almost synonymous with “goto elimination.”**
 
+#### Unstructured Programming
+
+**Unstructured Programming is a type of programming that generally executes in sequential order i.e., these programs just not jumped from any line of code and each line gets executed sequentially.**
+
+It is also known as non-structured programming that is capable of creating turning-complete algorithms.
+
+#### Structured Programming
+
+**Structured Programming is a type of programming that generally converts large or complex programs into more manageable and small code of pieces.**
+
+These small codes of pieces are usually known as **functions** or **modules** or **sub-programs** of large complex programs.
+
+It is known as modular programming and minimizes the chances of function affecting another.
+
 Structured programs are clearer, easier to debug and change, and more likely to be bug-free.
 
 We can summarize the structured programming paradigm as follows:
@@ -80,6 +98,33 @@ We can summarize the structured programming paradigm as follows:
 
 That is, you can take a large-scale problem statement and decompose it into high-level functions. Each of those functions can then be decomposed into lower-level functions, ad infinitum. Moreover, each of those decomposed functions can be represented using the restricted control structures of structured programming.
 
+Building on this foundation, disciplines such as structured analysis and structured design became popular in the late 1970s and throughout the 1980s. Men like Ed Yourdon, Larry Constantine, Tom DeMarco, and Meilir Page-Jones promoted and popularized these techniques throughout that period. By following these disciplines, programmers could break down large proposed systems into modules and components that could be further broken down into tiny provable functions.
+
+Structured Analysis and System Specification, 1979 by Tom DeMarco:
+![Structured Analysis and System Specification by Tom DeMarco:](./images/demarco-book.jpg)
+
+
+#### Structured vs Unstructured Programming
+
+![Structured vs Unstructured Programming](./images/structured-vs-unstructured.png)
+
+Additional Information:
+
+|Structured Programming | Unstructured Programming |
+| ---- | ---- |
+| It is basically a subset of procedural programs. | It is basically a procedural program. |
+| In this, programmers are allowed to code a program simply by dividing the program into modules or smaller units. | In this, programmers are not allowed code divide programs into small units. Instead, the program should be written as a single continuous block without any breakage. |
+| It is more user-friendly and easy to understand as compared to unstructured programming. | It is less user-friendly and little hard to understand as compared to structured programming. |
+| It is easier to learn and follow. | 	It is difficult to learn and follow. |
+| Its advantages include reduce complexity, facilitate debugging, increase programmer productivity programs, etc. | Its advantages include its speed. |
+| Such programs can be used for small and medium-scale projects and also for complex projects. | Such programs cannot be used for medium and complex projects. Instead, they can be used for small and easier projects. |
+| These programs do not allow code duplication. | These programs allow code duplication. |
+| Structured programs use a greater number of data types as compared to unstructured programs. | Unstructured programs use a limited number of data types as compared to structured programs. |
+| It does not use GOTO to control the flow of execution. Instead, it uses loops. | It uses GOTO to control the flow of execution. |
+| It produces readable code. | 	It hardly produces readable code. |
+| It does not provide full freedom to programmers to program as they want. | It provides full freedom to programmers to program as they want. |
+| Languages: C, C+, C++, C#, Java, PERL, Ruby, PHP, ALGOL, Pascal, PL/I and Ada | Languages: Early versions of BASIC (such as MSX BASIC and GW-BASIC), JOSS, FOCAL, MUMPS, TELCOMP, COBOL, machine-level code, early assembler systems (without procedural metaoperators), assembler debuggers and some scripting languages such as MS-DOS batch file language. |
+
 ### Object-Oriented Programming
 
 The second paradigm to be adopted was actually discovered two years earlier, in **1966**, by **Ole Johan Dahl** and **Kristen Nygaard**. 
@@ -93,6 +138,88 @@ We can summarize the object-oriented programming paradigm as follows:
 - ***Object-oriented programming imposes discipline on indirect transfer of control.***
 
 ![Object Oriented Programming Concepts](./images/Object-Oriented-Programming.png)
+
+#### What is Object Oriented?
+
+There are many opinions and many answers to this question.
+
+**To the software architect, however, the answer is clear: OO is the ability, through the use of polymorphism, to gain absolute control over every source code dependency in the system.**
+
+It allows the architect to create a plugin architecture, in which modules that contain high-level policies are independent of modules that contain low-level details. The low-level details are relegated to plugin modules that can be deployed and developed independently from the modules that contain high-level policies.
+
+The four principles of object-oriented programming are encapsulation, abstraction, inheritance, and polymorphism.
+
+These words may sound scary for a junior developer. And the complex, excessively long explanations in Wikipedia sometimes double the confusion.
+
+#### Encapsulation
+
+The reason encapsulation is cited as part of the definition of OO is that OO languages provide easy and effective encapsulation of data and function. As a result, a line can be drawn around a cohesive set of data and functions. Outside of that line, the data is hidden and only some of the functions are known. We see this concept in action as the private data members and the public member functions of a class.
+
+**Encapsulation is achieved when each object keeps its state private, inside a class. Other objects don’t have direct access to this state. Instead, they can only call a list of public functions — called methods.**
+
+**So, the object manages its own state via methods — and no other class can touch it unless explicitly allowed. If you want to communicate with the object, you should use the methods provided. But (by default), you can’t change the state.**
+
+#### Abstraction
+
+Abstraction can be thought of as a natural extension of encapsulation.
+
+In object-oriented design, programs are often extremely large. And separate objects communicate with each other a lot. So maintaining a large codebase like this for years — with changes along the way — is difficult.
+
+Abstraction is a concept aiming to ease this problem.
+
+**Applying abstraction means that each object should only expose a high-level mechanism for using it.**
+
+**This mechanism should hide internal implementation details. It should only reveal operations relevant for the other objects.**
+
+Think — a coffee machine. It does a lot of stuff and makes quirky noises under the hood. But all you have to do is put in coffee and press a button.
+
+**Preferably, this mechanism should be easy to use and should rarely change over time. Think of it as a small set of public methods which any other class can call without “knowing” how they work.**
+
+#### Inheritance
+
+OK, we saw how encapsulation and abstraction can help us develop and maintain a big codebase.
+
+But do you know what is another common problem in OOP design?
+
+**Objects are often very similar. They share common logic. But they’re not entirely the same.**
+
+So how do we reuse the common logic and extract the unique logic into a separate class? One way to achieve this is inheritance.
+
+**It means that you create a (child) class by deriving from another (parent) class. This way, we form a hierarchy.**
+
+**The child class reuses all fields and methods of the parent class (common part) and can implement its own (unique part).**
+
+#### Polymorphism
+
+**Polymorphism means “many shapes” in Greek.**
+
+So we already know the power of inheritance and happily use it. But there comes this problem.
+
+Say we have a parent class and a few child classes which inherit from it. Sometimes we want to use a collection — for example a list — which contains a mix of all these classes. Or we have a method implemented for the parent class — but we’d like to use it for the children, too.
+
+This can be solved by using polymorphism.
+
+**Simply put, polymorphism gives a way to use a class exactly like its parent so there’s no confusion with mixing types. But each child class keeps its own methods as they are.**
+
+This typically happens by defining a (parent) interface to be reused. It outlines a bunch of common methods. Then, each child class implements its own version of these methods.
+
+Any time a collection (such as a list) or a method expects an instance of the parent (where common methods are outlined), the language takes care of evaluating the right implementation of the common method — regardless of which child is passed.
+
+#### Anti-patterns for Object Oriented Programming
+
+[Goodbye, Object Oriented Programming, 2016](https://medium.com/@cscalfani/goodbye-object-oriented-programming-a59cda4c0e53)
+
+**Inheritance:**
+
+**There’s a great quote by Joe Armstrong, the creator of Erlang:**
+
+```
+The problem with object-oriented languages is they’ve got all this implicit environment that they carry around with them. You wanted a banana but what you got was a gorilla holding the banana and the entire jungle.
+```
+
+**Banana Monkey Jungle Solution**
+
+I can tame this problem by not creating hierarchies that are too deep. But if Inheritance is the key to Reuse, then any limits I place on that mechanism will surely limit the benefits of Reuse. Right?
 
 ### Functional Programming
 
