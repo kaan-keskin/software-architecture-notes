@@ -229,9 +229,17 @@ The third paradigm, which has only recently begun to be adopted, was the first t
 
 Functional programming is the direct result of the work of **Alonzo Church**, who in **1936** invented **lambda-calculus** while pursuing the same mathematical problem that was motivating Alan Turing at the same time.
 
-His lambda-calculus is the foundation of the LISP language, invented in 1958 by John McCarthy. 
+His lambda-calculus is the foundation of the LISP language, invented in 1958 by John McCarthy.
+
+**Lambda calculus is framework developed by Alonzo Church to study computations with functions. It can be called as the smallest programming language of the world.** It gives the definition of what is computable. Anything that can be computed by lambda calculus is computable. It is equivalent to Turing machine in its ability to compute. It provides a theoretical framework for describing functions and their evaluation. It forms the basis of almost all current functional programming languages.
+
+***Fact: Alan Turing was a student of Alonzo Church who created Turing machine which laid the foundation of imperative programming style.***
 
 **A foundational notion of lambda-calculus is immutability—that is, the notion that the values of symbols do not change. This effectively means that a functional language has no assignment statement. Most functional languages do, in fact, have some means to alter the value of a variable, but only under very strict discipline.**
+
+Functional programming is a programming paradigm in which we try to bind everything in pure mathematical functions style. It is a declarative type of programming style. 
+
+Its main focus is on “what to solve” in contrast to an imperative style where the main focus is “how to solve”. It uses expressions instead of statements. An expression is evaluated to produce a value whereas a statement is executed to assign variables.
 
 **Functional programming** is a style of **programming** that emphasizes writing applications using only **pure functions** and **immutable values**.
 
@@ -258,6 +266,8 @@ Why is this point important as an architectural consideration? Why would an arch
 As an architect, you should be very interested in issues of concurrency. You want to make sure that the systems you design will be robust in the presence of multiple threads and processors. The question you must be asking yourself, then, is whether immutability is practicable.
 
 The answer to that question is affirmative, if you have infinite storage and infinite processor speed. Lacking those infinite resources, the answer is a bit more nuanced. Yes, immutability can be practicable, if certain compromises are made.
+
+Immutable types are safer from bugs, easier to understand, and more ready for change. Mutability makes it harder to understand what your program is doing, and much harder to enforce contracts.
 
 Some of those compromises:
 
