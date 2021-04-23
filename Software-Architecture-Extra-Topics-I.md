@@ -101,6 +101,7 @@ That is, you can take a large-scale problem statement and decompose it into high
 Building on this foundation, disciplines such as structured analysis and structured design became popular in the late 1970s and throughout the 1980s. Men like Ed Yourdon, Larry Constantine, Tom DeMarco, and Meilir Page-Jones promoted and popularized these techniques throughout that period. By following these disciplines, programmers could break down large proposed systems into modules and components that could be further broken down into tiny provable functions.
 
 Structured Analysis and System Specification, 1979 by Tom DeMarco:
+
 ![Structured Analysis and System Specification by Tom DeMarco:](./images/demarco-book.jpg)
 
 
@@ -153,6 +154,16 @@ These words may sound scary for a junior developer. And the complex, excessively
 
 #### Encapsulation
 
+**The whole idea behind the data encapsulation is to hide the implementation details from users. This is achieved through the state (the private fields) and the behaviors (the public methods) of a Class.**
+
+**Often, for practical reasons, an object may wish to expose some of its variables or hide some of its methods.**
+
+**Encapsulation uses three common types of modifier to encapsulate data.**
+
+- Public
+- Private
+- Protected
+
 The reason encapsulation is cited as part of the definition of OO is that OO languages provide easy and effective encapsulation of data and function. As a result, a line can be drawn around a cohesive set of data and functions. Outside of that line, the data is hidden and only some of the functions are known. We see this concept in action as the private data members and the public member functions of a class.
 
 **Encapsulation is achieved when each object keeps its state private, inside a class. Other objects don’t have direct access to this state. Instead, they can only call a list of public functions — called methods.**
@@ -189,9 +200,13 @@ So how do we reuse the common logic and extract the unique logic into a separate
 
 **The child class reuses all fields and methods of the parent class (common part) and can implement its own (unique part).**
 
+![Object-Oriented Programming Iheritance](./images/object-oriented-class-objects.png)
+
 #### Polymorphism
 
-**Polymorphism means “many shapes” in Greek.**
+**Polymorphism means “many shapes” in Greek.** 
+
+It is the ability to appear in many forms.
 
 So we already know the power of inheritance and happily use it. But there comes this problem.
 
@@ -199,11 +214,49 @@ Say we have a parent class and a few child classes which inherit from it. Someti
 
 This can be solved by using polymorphism.
 
+In Object-Oriented Programing, polymorphism refers to a programming language's ability to process objects differently depending on their data type or class.
+
 **Simply put, polymorphism gives a way to use a class exactly like its parent so there’s no confusion with mixing types. But each child class keeps its own methods as they are.**
 
 This typically happens by defining a (parent) interface to be reused. It outlines a bunch of common methods. Then, each child class implements its own version of these methods.
 
 Any time a collection (such as a list) or a method expects an instance of the parent (where common methods are outlined), the language takes care of evaluating the right implementation of the common method — regardless of which child is passed.
+
+#### Object-Based Programming
+
+**Object-Based Programming is based on the idea that of encapsulating state and operations inside "objects".**
+
+**Object-based languages need not support inheritence or polymorphism. While Object-Oriented Language support all feature of OOPS.**
+
+#### Why we use Object-Based instead of Object-Oriented?
+
+**The main benefit of the Object-Based Programming is that it can be understood by the common humans.**
+
+**Object-Based is much easier and more robust than Object-Oriented.**
+
+**It allows for fast creation of web page events.**
+
+**It allows more freedom in the creation of objects.**
+
+#### A Note About Object-Based and Object-Oriented Programming
+
+Inheritance with method overriding is a powerful way to build software components that
+are like existing components but need to be customized to your application’s unique needs.
+
+In the Python open-source world, there are a huge number of well-developed class libraries for which your programming style is:
+
+- know what libraries are available,
+- know what classes are available,
+- make objects of existing classes, and
+- send them messages (that is, call their methods).
+
+This style of programming called **Object-Based Programming (OBP)**. 
+
+When you do composition with objects of known classes, you’re still doing object-based programming. 
+
+Adding inheritance with overriding to customize methods to the unique needs of your applications and possibly process objects polymorphically is called **Object-Oriented Programming (OOP)**.
+
+If you do composition with objects of inherited classes, that’s also object-oriented programming.
 
 #### Anti-patterns for Object Oriented Programming
 
@@ -220,6 +273,10 @@ The problem with object-oriented languages is they’ve got all this implicit en
 **Banana Monkey Jungle Solution**
 
 I can tame this problem by not creating hierarchies that are too deep. But if Inheritance is the key to Reuse, then any limits I place on that mechanism will surely limit the benefits of Reuse. Right?
+
+### Structured Programming vs Object-Oriented Programming
+
+![Structured Programming vs Object-Oriented Programming](./images/structured-vs-object-oriented.jpg)
 
 ### Functional Programming
 
