@@ -13,6 +13,29 @@
 - Letters to the editor: go to statement considered harmful - Edsger W. Dijkstra - [Communications of the ACM](https://dl.acm.org/magazine/cacm) - March 1968
 - Flow diagrams, turing machines and languages with only two formation rules - Corrado Bohm, Giuseppe Jacopini - [Communications of the ACM](https://dl.acm.org/magazine/cacm) - May 1966
 
+## Software Architecture Overview
+
+**Software architecture is the fundamental design of an entire software system.** 
+
+It defines what elements are included in the system, what function each element has, and how each element relates to one another.
+
+**It is the big picture or overall structure of the whole system—how everything works together.**
+
+It follows that to design a software system, a software architect has to take many factors into consideration:
+
+- the purpose of the system,
+- the audience or users of the system,
+- the qualities that are of most importance to users, and
+- where the system will run.
+
+***Benefits:*** Software architecture is important, particularly for large systems. **If there is a clear design of the overall system from the start, there is a solid basis for developers to follow.** Each developer will then know what needs to be implemented and how things are related to meet desired needs efficiently. This avoids conflicts, duplication, and ad hoc unnecessary work.
+
+**Some advantages of software architecture include:**
+
+- **higher productivity** for the software team, as a well-defined structure helps to coordinate work, implement individual features, or guide discussions on potential issues.
+- improved **evolution** for the software, since design principles are applied to make changes easier to accomplish or defects easier to find.
+- enhanced **quality** in the software by carefully considering the needs and perspectives of all the stakeholders.
+
 ## Analyzing and Evaluating an Architecture
 
 In addition to designing a system, it is important to know how to evaluate the design to determine if it addresses the concerns, or the requirements, of all stakeholders. **Analyzing and evaluating software architecture can be difficult due to the abstract nature of software.**
