@@ -15,6 +15,11 @@ Available at: https://github.com/kaan-keskin/software-architecture-notes
 - Letters to the editor: go to statement considered harmful - Edsger W. Dijkstra - [Communications of the ACM](https://dl.acm.org/magazine/cacm) - March 1968
 - Flow diagrams, turing machines and languages with only two formation rules - Corrado Bohm, Giuseppe Jacopini - [Communications of the ACM](https://dl.acm.org/magazine/cacm) - May 1966
 
+```
+Software is a compound word. The word "ware" means "product". The word "soft" means easy to change. Therefore, software is a product that is easy to change. Software was invented because we wanted a way to quickly and easily change the behavior of our machines."
+- Robert C. Martin
+```
+
 ## Programming Paradigms
 
 **Software architecture begins with the code**—and so we will begin our discussion of architecture by looking at what we’ve learned about code since code was first written.
@@ -30,6 +35,8 @@ All programming languages can be classified, based on their features, into some 
 ![Programming Paradigms](./images/paradigms.png)
 
 Imperative is the counter part of declarative. Imperative basically means that you tell the computer what to do by having it execute a series of instructions that you provide. A declarative program on the other hand tells what is to be achieved. In other words, it is defining steps versus defining a result.
+
+![Functional Programming Taxonomy](./images/functional-programming-taxonomy.png)
 
 ### Imperative Programming
 
@@ -92,7 +99,7 @@ It is also known as non-structured programming that is capable of creating turni
 
 This may sound trivial and by today's standards it is, but you need some basic support in the machine before you can do this: the ability to jump, some sort of stack to push an address on that can be popped and jumped to later and a stack pointer. 
 
-Micro processors soon offered this feature but you can imagine a primitive processor that is only capable of executing instructions fed to it sequentially, like a punch tape or punch card processor.
+Micro-processors soon offered this feature but you can imagine a primitive processor that is only capable of executing instructions fed to it sequentially, like a punch tape or punch card processor.
 
 ![Procedural Programming Example](./images/procedural_programming.webp)
 
@@ -153,7 +160,6 @@ Additional Information:
 
 |Structured Programming | Unstructured Programming |
 | --- | --- |
-| It is basically a subset of procedural programs. | It is basically a procedural program. |
 | In this, programmers are allowed to code a program simply by dividing the program into modules or smaller units. | In this, programmers are not allowed code divide programs into small units. Instead, the program should be written as a single continuous block without any breakage. |
 | It is more user-friendly and easy to understand as compared to unstructured programming. | It is less user-friendly and little hard to understand as compared to structured programming. |
 | It is easier to learn and follow. | 	It is difficult to learn and follow. |
@@ -278,7 +284,19 @@ This typically happens by defining a (parent) interface to be reused. It outline
 
 Any time a collection (such as a list) or a method expects an instance of the parent (where common methods are outlined), the language takes care of evaluating the right implementation of the common method — regardless of which child is passed.
 
-Examples of Object Oriented programming languages:
+#### Duck Typing and Polymorphism (Case Study: Python)
+
+Most other object-oriented programming languages require inheritance-based “is a” relationships to achieve polymorphic behavior. 
+
+Python is more flexible. **It uses a concept called duck typing, which the Python documentation describes as:**
+
+```
+A programming style which does not look at an object’s type to determine if it has the right interface; instead, the method or attribute is simply called or used (“If it looks like a duck and quacks like a duck, it must be a duck.”).
+```
+
+**So, when processing an object at execution time, its type does not matter. As long as the object has the data attribute, property or method (with the appropriate parameters) you wish to access, the code will work.**
+
+#### Examples of Object Oriented programming languages:
 
 ```
 Simula : first OOP language
@@ -289,7 +307,7 @@ Visual Basic .NET : developed by Microsoft
 Python : developed by Guido van Rossum
 Ruby : developed by Yukihiro Matsumoto 
 Smalltalk : developed by Alan Kay, Dan Ingalls, Adele Goldberg
-``` 
+```
 
 #### Object-Based Programming
 
@@ -309,8 +327,7 @@ Smalltalk : developed by Alan Kay, Dan Ingalls, Adele Goldberg
 
 #### A Note About Object-Based and Object-Oriented Programming
 
-Inheritance with method overriding is a powerful way to build software components that
-are like existing components but need to be customized to your application’s unique needs.
+Inheritance with method overriding is a powerful way to build software components that are like existing components but need to be customized to your application’s unique needs.
 
 In the Python open-source world, there are a huge number of well-developed class libraries for which your programming style is:
 
@@ -517,6 +534,8 @@ WHERE AVG(drug_dosage) &gt; 1000
 
 ### Logical Programming
 
+**Logic programming is a programming paradigm which is largely based on formal logic. Any program written in a logic programming language is a set of sentences in logical form, expressing facts and rules about some problem domain. Major logic programming language families include Prolog, answer set programming (ASP) and Datalog.**
+
 It can be termed as abstract model of computation. It would solve logical problems like puzzles, series etc.
 
 In logic programming we have a knowledge base which we know before and along with the question and knowledge base which is given to machine, it produces result.
@@ -525,18 +544,21 @@ In normal programming languages, such concept of knowledge base is not available
 
 In logical programming the main emphasize is on knowledge base and the problem. The execution of the program is very much like proof of mathematical statement, e.g., Prolog
 
-Sum of two number in prolog:
+A typical prolog query can be asked as:
 
 ```Prolog
-  predicates
-  sumoftwonumber(integer, integer)
-clauses
+Query 1 : ?- singer(sonu).
+Output : Yes.
 
-  sum(0, 0).
-   sum(n, r):-
-        n1=n-1,
-        sum(n1, r1),
-        r=r1+n 
+Explanation : As our knowledge base contains 
+the above fact, so output was 'Yes', otherwise 
+it would have been 'No'. 
+
+Query 2 : ?- odd_number(7).
+Output : No.
+
+Explanation : As our knowledge base does not 
+contain the above fact, so output was 'No'.
 ```
 
 ### Functional Programming
@@ -579,8 +601,6 @@ function add2 (x){
 We can summarize the functional programming paradigm as follows:
 
 - ***Functional programming imposes discipline upon assignment.***
-
-![Functional Programming Taxonomy](./images/functional-programming-taxonomy.png)
 
 #### Immutability and Architecture
 
