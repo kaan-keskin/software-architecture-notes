@@ -1,4 +1,4 @@
-# Fundamentals of Software Architecture: Extra Topics II - Kruchten’s 4+1 View Model
+# Software Architecture View Models: Kruchten’s 4+1 View Model
 
 **Author:** Kaan Keskin
 
@@ -11,11 +11,23 @@ Available at: https://github.com/kaan-keskin/software-architecture-notes
 - Clean Architecture - Robert C. Martin - 2018
 - Software Architecture Lecture Notes - University of Alberta - 2017
 - Code Complete 2 - Steve McConnell - 2009
-- The Architecture Tradeoff Analysis Method - Rick Kazman, Mark Klein, Mario Barbacci, Tom Longstaff, Howard Lipson, Jeromy Carriere - Proceedings of ICECCS98 - July 1998
 - Architectural Blueprints—The “4+1” View Model of Software Architecture from Philippe Kruchten - IEEE Software - November 1995
-- [*A Case against the GO TO Statement (EWD-215)*](http://www.cs.utexas.edu/users/EWD/ewd02xx/EWD215.PDF) - Dijkstra, Edsger W. - 1968
-- Letters to the editor: go to statement considered harmful - Edsger W. Dijkstra - [Communications of the ACM](https://dl.acm.org/magazine/cacm) - March 1968
-- Flow diagrams, turing machines and languages with only two formation rules - Corrado Bohm, Giuseppe Jacopini - [Communications of the ACM](https://dl.acm.org/magazine/cacm) - May 1966
+- Software Architecture - Wikipedia: https://en.wikipedia.org/wiki/Software_architecture
+- View Model - Wikipedia: https://en.wikipedia.org/wiki/View_model
+
+## Architecture View Models (Viewpoints)
+
+A view model or viewpoints framework in systems engineering, software engineering, and enterprise engineering is a framework which defines a coherent set of views to be used in the construction of a system architecture, software architecture, or enterprise architecture. 
+
+A view is a representation of a whole system from the perspective of a related set of concerns.
+
+The purpose of views and viewpoints is to enable humans to comprehend very complex systems, to organize the elements of the problem and the solution around domains of expertise and to separate concerns. 
+
+Software architecture descriptions are commonly organized into views, which are analogous to the different types of blueprints made in building architecture. 
+
+Each view addresses a set of system concerns, following the conventions of its viewpoint, where a viewpoint is a specification that describes the notations, modeling, and analysis techniques to use in a view that expresses the architecture in question from the perspective of a given set of stakeholders and their concerns (ISO/IEC/IEEE 42010). 
+
+The viewpoint specifies not only the concerns framed (i.e., to be addressed) but the presentation, model kinds used, conventions used and any consistency (correspondence) rules to keep a view consistent with other views. 
 
 ## Kruchten’s 4+1 View Model
 

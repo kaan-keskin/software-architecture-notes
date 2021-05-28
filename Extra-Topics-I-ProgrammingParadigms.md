@@ -1,4 +1,4 @@
-# Fundamentals of Software Architecture: Extra Topics I - Programming Paradigms
+# Fundamentals of Software Architecture: Programming Paradigms
 
 **Author:** Kaan Keskin
 
