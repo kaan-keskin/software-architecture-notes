@@ -421,8 +421,8 @@ It is the result of assembling a certain number of architectural elements in som
 - **The development view**, which describes the static organization of the software in its development
   environment.
 
-The description of an architecture—the decisions made—can be organized around these four views, and
-then illustrated by a few selected use cases, or scenarios which become a fifth view.
+**The description of an architecture—the decisions made—can be organized around these four views, and
+then illustrated by a few selected use cases, or scenarios which become a fifth view.**
 
 ![The 4+1 View Model](./images/figure1-The4+1ViewModel.png)
 
@@ -441,6 +441,10 @@ Mapping to UML 2 Diagrams:
 - Package Diagram
 - Composite Structure Diagram
 - State Machine Diagram
+
+![UML Class Diagram Example 1](./images/uml-class-diagram-domain-overview.png)
+
+Source: https://www.uml-diagrams.org
 
 ### The Process Architecture
 
@@ -472,6 +476,10 @@ Mapping to UML 2 Diagrams:
 - Timing Diagram
 - Interaction Overview
 
+![UML Communication Diagram Example](./images/uml-communication-diagram-overview.png)
+
+Source: https://www.uml-diagrams.org
+
 ### The Development Architecture
 
 *Subsystem decomposition*
@@ -497,6 +505,10 @@ Mapping to UML 2 Diagrams:
 - Component diagram
 - Package diagram
 
+![UML Component Diagram Example](./images/uml-component-diagram-overview.png)
+
+Source: https://www.uml-diagrams.org
+
 ### The Physical Architecture
 
 *Mapping the software to the hardware*
@@ -514,6 +526,10 @@ The mapping of the software to the nodes therefore needs to be highly flexible a
 Mapping to UML 2 Diagrams:
 
 - Deployment Diagram
+
+![UML Deployment Diagram Example](./images/uml-deployment-diagram-overview-instance.png)
+
+Source: https://www.uml-diagrams.org
 
 ### Scenarios
 
@@ -539,6 +555,10 @@ Mapping to UML 2 Diagrams:
 
 - Use Case Diagram
 - Activity Diagram
+
+![UML Activity Diagram Example](./images/uml-activity-examples-online-shopping.png)
+
+Source: https://www.uml-diagrams.org
 
 ***None of the views are fully independent of each other, with elements of some views connected to others. The 4+1 view model can be molded to fit many situations to understand the architecture of a software system. Being able to see a complex problem in many different perspectives helps make your software more versatile.***
 
