@@ -21,43 +21,6 @@ Available at: https://github.com/kaan-keskin/software-architecture-notes
 
 ![A Software Architect's Dream User](./images/software-architects-dream-user.png)
 
-## Software Architecture Overview (recap)
-
-**Software architecture is the fundamental design of an entire software system.** 
-
-It defines what elements are included in the system, what function each element has, and how each element relates to one another.
-
-**It is the big picture or overall structure of the whole system—how everything works together.**
-
-It follows that to design a software system, a software architect has to take many factors into consideration:
-
-- the purpose of the system,
-- the audience or users of the system,
-- the qualities that are of most importance to users, and
-- where the system will run.
-
-***Benefits:*** Software architecture is important, particularly for large systems. **If there is a clear design of the overall system from the start, there is a solid basis for developers to follow.** Each developer will then know what needs to be implemented and how things are related to meet desired needs efficiently. This avoids conflicts, duplication, and ad hoc unnecessary work.
-
-**Some advantages of software architecture include:**
-
-- **higher productivity** for the software team, as a well-defined structure helps to coordinate work, implement individual features, or guide discussions on potential issues.
-- improved **evolution** for the software, since design principles are applied to make changes easier to accomplish or defects easier to find.
-- enhanced **quality** in the software by carefully considering the needs and perspectives of all the stakeholders.
-
-## Who Needs an Architect?
-
-![Who Needs an Architect?](./images/who-needs-an-architect.png)
-
-In most successful software projects, the expert developers working on that project have a shared understanding of the system design. This shared understanding is called **architecture**.
-
-This understanding includes how the system is divided into components and how the components interact through interfaces. These components are usually composed of smaller components, but the architecture only includes the components and interfaces that are understood by all the developers.
-
-This would be a better definition because it makes clear that architecture is a social construct (well, software is too, but architecture is even more so) because it doesn’t just depend on the software, but on what part of the software is considered important by group consensus.
-
-**Architecture is about the important stuff. Whatever that is.**
-
-<img src="./images/software-architect-no-real.jpg" alt="Software Architect No Real" style="zoom: 80%;" />
-
 ## What do software architects really do?
 
 ![What do software architects really do?](./images/what-do-software-architects-really-do.png)
@@ -156,44 +119,44 @@ A software architect typically works with project managers, discusses architectu
 
 ### Architectural Analysis
 
-Architectural analysis is the process of understanding the environment in which a proposed system will operate and determining the requirements for the system. 
+**Architectural analysis is the process of understanding the environment in which a proposed system will operate and determining the requirements for the system.**
 
 The input or requirements to the analysis activity can come from any number of stakeholders and include items such as:
 
-- What the system will do when operational (the functional requirements)?
-- How well the system will perform runtime non-functional requirements such as reliability, operability, performance efficiency, security, compatibility?
+- What the system will do when operational (**the functional requirements**)?
+- How well the system will perform runtime **non-functional requirements** such as reliability, operability, performance efficiency, security, compatibility?
 - Development-time of non-functional requirements such as maintainability and transferability.
 - Business requirements and environmental contexts of a system that may change over time, such as legal, social, financial, competitive, and technology concerns.
 
-The outputs of the analysis activity are those requirements that have a measurable impact on a software system's architecture, called architecturally significant requirements.
+The outputs of the analysis activity are those requirements that have a measurable impact on a software system's architecture, called **Architecturally Significant Requirements (ASRs)**.
 
 ### Architectural Synthesis
 
-Architectural synthesis or design is the process of creating an architecture. 
+**Architectural synthesis or design is the process of creating an architecture.**
 
-Given the architecturally significant requirements determined by the analysis, the current state of the design and the results of any evaluation activities, the design is created and improved
+Given the architecturally significant requirements determined by the analysis, the current state of the design and the results of any evaluation activities, the design is created and improved.
 
 ### Architecture Evaluation 
 
-Architecture evaluation is the process of determining how well the current design or a portion of it satisfies the requirements derived during analysis. 
+**Architecture evaluation is the process of determining how well the current design or a portion of it satisfies the requirements derived during analysis.**
 
 An evaluation can occur whenever an architect is considering a design decision, it can occur after some portion of the design has been completed, it can occur after the final design has been completed or it can occur after the system has been constructed. 
 
-Some of the available software architecture evaluation techniques include Architecture Trade-off Analysis Method (ATAM) and TARA.
+Some of the available software architecture evaluation techniques include **Architecture Trade-off Analysis Method (ATAM)** and TARA.
 
 ### Architecture Evolution
 
-**Architecture evolution** is the process of maintaining and adapting an existing software architecture to meet changes in requirements and environment. 
+**Architecture evolution is the process of maintaining and adapting an existing software architecture to meet changes in requirements and environment.**
 
 As software architecture provides a fundamental structure of a software system, its evolution and maintenance would necessarily impact its fundamental structure. 
 
-As such, architecture evolution is concerned with adding new functionality as well as maintaining existing functionality and system behavior.
+As such, **architecture evolution is concerned with adding new functionality as well as maintaining existing functionality and system behavior.**
 
 Architecture requires critical supporting activities. These supporting activities take place throughout the core software architecture process. They include knowledge management and communication, design reasoning and decision making, and documentation.
 
 Book Recommendation:
 
-- Building Evolutionary Architectures: Support Constant Change - Neal Ford - 2017
+- **Building Evolutionary Architectures: Support Constant Change - Neal Ford - 2017**
 
 ![Neal Ford Books](./images/neal-ford-books.png)
 
@@ -201,7 +164,7 @@ Book Recommendation:
 
 In addition to designing a system, **it is important to know how to evaluate the design to determine if it addresses the concerns, or the requirements, of all stakeholders**.
 
- **Analyzing and evaluating software architecture can be difficult due to the abstract nature of software.**
+**Analyzing and evaluating software architecture can be difficult due to the abstract nature of software.**
 
 **It is important to methodically analyze and evaluate a system’s behaviors, quality attributes, and various characteristics.**
 
@@ -226,7 +189,7 @@ Both general and concrete scenarios have:
 
 Scenarios are built to identify situations that impact the quality attributes of a system. In the context of analyzing and evaluating architecture, you should focus on situations that are outside of the normal execution path. This means that scenarios involving incorrect input, heavy system loads, or potential security breaches should be prioritized highly.
 
-It is a system’s “inability” to handle unexpected failures that stops it from achieving a specific quality attribute.
+**It is a system’s “inability” to handle unexpected failures that stops it from achieving a specific quality attribute.**
 
 ### Availability Example
 
@@ -234,9 +197,9 @@ Let us consider scenarios through an example.
 
 **Imagine you are addressing the availability of a system. In addition to focusing on when a system is online and behaving normally, you have to consider situations where the system becomes unavailable.**
 
-In a general scenario, high-level events are summarized. As a single scenario may involve many component values, it often summarized in a table.
+**In a general scenario, high-level events are summarized.** As a single scenario may involve many component values, it often summarized in a table.
 
-Below is an example of a general availability scenario.
+Below is an example of a **general** availability scenario.
 
 | Scenario Component | Scenario Component Value |
 | :--- | :--- |
@@ -268,7 +231,7 @@ Below is an example of a general availability scenario.
 | | - Time to complete a process under heavy system load |
 | | - Time to become available after encountering an incorrect input or request |
 
-**Concrete scenarios are more focused.** They can help you test an architecture with a specific stimulus under specific system environments and measure how well the system can respond.
+**Concrete scenarios are more focused.** **They can help you test an architecture with a specific stimulus under specific system environments and measure how well the system can respond.**
 
 Let us expand our example on availability. Availability of a web server can be hindered in its ability to process requests when at resource limits or under heavy load. A server’s availability should be measured under different conditions.
 
@@ -292,13 +255,39 @@ The attributes in this standard interact with each other to strengthen or weaken
 
 **The principle idea of ATAM is to ask the proper questions about how their interaction should be, and to be able to ask these questions as soon as possible.**
 
+### Example Trade-off: CAP Theorem
+
+**CAP theorem states it is impossible for a distributed system to simultaneously provide more than two of these three guarantees: consistency, availability, and partition tolerance.** Let us establish a few definitions. 
+
+**Consistency**: consistency means all clients see the same data at the same time no matter which node they connect to.
+
+**Availability**: availability means any client which requests data gets a response even if some of the nodes are down.
+
+**Partition Tolerance**: a partition indicates a communication break between two nodes. Partition tolerance means the system continues to operate despite network partitions.
+
+**CAP theorem states that one of the three properties must be sacrificed to support 2 of the 3 properties.**
+
+<img src="./images/cap-theorem.png" alt="CAP Theorem" style="zoom:50%;" />
+
+Nowadays, key-value stores are classified based on the two CAP characteristics they support:
+
+**CP (consistency and partition tolerance) systems**: a CP key-value store supports consistency and partition tolerance while sacrificing availability.
+
+**AP (availability and partition tolerance) systems**: an AP key-value store supports availability and partition tolerance while sacrificing consistency.
+
+**CA (consistency and availability) systems**: a CA key-value store supports consistency and availability while sacrificing partition tolerance. Since network failure is unavoidable, a distributed system must tolerate network partition. Thus, a CA system cannot exist in real-world applications.
+
+### 4-Phases of the Architecture Trade-off Analysis Method
+
 It does so by using a spiral model of design, that consists of four major phases: scenario and requirements gathering, architectural views and scenario realization, model building and analysis, and trade-offs. 
 
 As shown on the illustration, these phases are then divided into different steps. 
 
-Steps of the Architecture Trade-off Analysis Method:
+4-Phases of the Architecture Trade-off Analysis Method:
 
 ![Steps of the Architecture Tradeoff Analysis Method](./images/ATAMmodelv2.jpg)
+
+### Participants in ATAM
 
 There are three different groups of participants in ATAM.
 
@@ -314,6 +303,8 @@ There are three different groups of participants in ATAM.
 
 - **Architecture stakeholders** are a participant group of those who want the architecture to successfully address business needs, but who are not actively involved in the evaluation process. This could include end users, developers, and support staff.
 
+### 9-Steps of the Architecture Trade-off Analysis Method
+
 In an ATAM, a software project is initiated when business drivers identify a need for a system to address some problem. Business drivers go hand in hand with the system architecture, which is created as the solution to the business issues. Together, business drivers and system architecture determine the quality attributes of the system, the architectural approach taken, and the design decisions that are made. These combine together to create quality attribute scenarios.
 
 Scenarios can then be analyzed, resulting in an evaluation of the system, which includes trade-offs, sensitivity points, non-risk scenarios, and risk scenarios. Since the risk scenarios have a negative impact on the quality of the system, each of them are analyzed and categorized into “risk themes.”
@@ -326,7 +317,7 @@ The entire ATAM process itself can be broken down into nine steps.
 
 1. **Present the ATAM.**
 
-    The evaluation team presents the ATAM process. This    includes: the context for the evaluation, expectations, procedures, outputs, and addresses any concerns about the evaluation.
+    The evaluation team presents the ATAM process. This includes: the context for the evaluation, expectations, procedures, outputs, and addresses any concerns about the evaluation.
 
 2. **Present the business drivers.**
 
@@ -342,7 +333,7 @@ The entire ATAM process itself can be broken down into nine steps.
 
 5. **Create a quality attribute tree.**
 
-    A quality attribute utility tree is created, which maps the quality-related **Architecturally Significant Requirements (ASR)s** for each quality attribute. ASRs arise from the business drivers.
+    A **quality attribute utility tree** is created, which maps the quality-related **Architecturally Significant Requirements (ASR)s** for each quality attribute. ASRs arise from the business drivers.
 
     To build such a tree, the overall “utility” of a system is broken down into quality attributes, which are refined into attribute refinements. **Attribute refinements** are more specific qualities of a system. Once the quality attributes have been refined, ASRs can be associated with the appropriate attribute.
 
@@ -350,7 +341,7 @@ The entire ATAM process itself can be broken down into nine steps.
 
     ![Quality Attribute Tree](./images/quality-attribute-tree.png)
 
-    In quality attribute trees, ASRs are given priority values to denote if they are “must-haves” or not. The example above uses high (H), medium (M), and low (L) designations, but these values could differ from system to system.
+    **In quality attribute trees, ASRs are given priority values to denote if they are “must-haves” or not. The example above uses high (H), medium (M), and low (L) designations, but these values could differ from system to system.**
 
 6. **Analyze the architectural approaches.**
 
@@ -366,7 +357,7 @@ The entire ATAM process itself can be broken down into nine steps.
 
 8. **Re-analyze the architectural approaches.**
 
-    Recreate a utility tree, but this time, using the top five to ten scenarios prioritized in the previous step. This new tree can be used to talk with the system architect and discover how each scenario can be achieved with the system design.
+    **Recreate a utility tree, but this time, using the top five to ten scenarios prioritized in the previous step.** This new tree can be used to talk with the system architect and discover how each scenario can be achieved with the system design.
 
     ![Re-analyze Quality Attribute Tree](./images/quality-attribute-tree-reanalyze.png)
 
@@ -376,19 +367,21 @@ The entire ATAM process itself can be broken down into nine steps.
 
 ATAM helps expose unseen risks for stakeholders involved in the architectural process.
 
-Modern systems are becoming more and more complex, and creating an architecture that can achieve all the requirements for quality attributes is becoming increasingly important. Being able to evaluate and analyze architectures helps successfully create high-quality systems.
+**Modern systems are becoming more and more complex, and creating an architecture that can achieve all the requirements for quality attributes is becoming increasingly important. Being able to evaluate and analyze architectures helps successfully create high-quality systems.**
 
-ATAM is a common method for analyzing and evaluating architectures, especially as it does not require evaluators to have intimate knowledge of the system, and covers the viewpoints of all important stakeholders. ATAM helps minimize risks in a system by identifying them and helps architects minimize the effects of sensitivity points and be sensible about trade-offs.
+**ATAM is a common method for analyzing and evaluating architectures, especially as it does not require evaluators to have intimate knowledge of the system, and covers the viewpoints of all important stakeholders. ATAM helps minimize risks in a system by identifying them and helps architects minimize the effects of sensitivity points and be sensible about trade-offs.**
 
 ATAM also helps facilitate communication between stakeholders, including identifying issues with newly discovered functionalities that the stakeholders expressed to be important.
 
+<img src="./images/software-architect-no-real.jpg" alt="Software Architect No Real" style="zoom: 80%;" />
+
 ## Architecture View Models (Viewpoints)
 
-A view model or viewpoints framework in systems engineering, software engineering, and enterprise engineering is a framework which defines a coherent set of views to be used in the construction of a system architecture, software architecture, or enterprise architecture. 
+**A view model or viewpoints framework in systems engineering, software engineering, and enterprise engineering is a framework which defines a coherent set of views to be used in the construction of a system architecture, software architecture, or enterprise architecture.**
 
-A view is a representation of a whole system from the perspective of a related set of concerns.
+**A view is a representation of a whole system from the perspective of a related set of concerns.**
 
-The purpose of views and viewpoints is to enable humans to comprehend very complex systems, to organize the elements of the problem and the solution around domains of expertise and to separate concerns. 
+**The purpose of views and viewpoints is to enable humans to comprehend very complex systems, to organize the elements of the problem and the solution around domains of expertise and to separate concerns.**
 
 Software architecture descriptions are commonly organized into views, which are analogous to the different types of blueprints made in building architecture. 
 
