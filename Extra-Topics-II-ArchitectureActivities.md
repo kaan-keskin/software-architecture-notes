@@ -19,7 +19,7 @@ Available at: https://github.com/kaan-keskin/software-architecture-notes
 - Software Architecture - Wikipedia: https://en.wikipedia.org/wiki/Software_architecture
 - View Model - Wikipedia: https://en.wikipedia.org/wiki/View_model
 
-![A Software Architect's Dream User](./images/software-architects-dream-user.png)
+<img src="./images/software-architects-dream-user.png" alt="A Software Architect's Dream User" style="zoom: 67%;" />
 
 ## What do software architects really do?
 
@@ -27,7 +27,7 @@ Available at: https://github.com/kaan-keskin/software-architecture-notes
 
 To be successful, a software architect — or a software architecture team, collectively — must strike a delicate balance between **an external focus—both outwards: Listening to customers, users, watching technology, developing a long-term vision**, and **inwards: driving the development teams—and an internal, reﬂective focus: spending time to make the right design choices, validating them, and documenting them**.
 
-The architects should allocate their time in a 50:25:25 (internal:inwards:outwards) ratio as follows:
+The architects should allocate their time in a **50:25:25 (internal:inwards:outwards)** ratio as follows:
 
 **Internal focus**: About 50% of their time focused on architecting per se: architectural design, prototyping, evaluating, documenting, etc.
 
@@ -53,7 +53,7 @@ A software architect who is not communicating regularly with the customer, the e
 
 This software architecture team is not engaged enough with its users, particularly the developers. 
 
-They are probably doing a good technical job, as they are getting plenty of input, but if they do not regularly provide value to their immediate environment, **their input will be too late and be ignored**. They have to consistently provide value to the team.
+They are probably doing a good technical job, as they are getting plenty of input, but if they do not regularly provide value to their immediate environment, **their input will be too late and be ignored**. **They have to consistently provide value to the team.**
 
 ### Anti-pattern: creating a perfect architecture, but too hard to implement
 
@@ -89,13 +89,13 @@ You want them to review the architecture of another project, to take part of a d
 
 But if you are not careful, this leads to another anti-pattern.
 
-No or little architecture design progress is made: the architects are always away doing fascinating things or ﬁghting ﬁres. It is very easy to slip in this mode, especially after some initial good progress and early successes, which brought some fame on the architects.
+**No or little architecture design progress is made: the architects are always away doing fascinating things or ﬁghting ﬁres. It is very easy to slip in this mode, especially after some initial good progress and early successes, which brought some fame on the architects.**
 
 <img src="./images/antipattern–absent-architect.png" alt="antipattern – absent architect" style="zoom: 67%;" />
 
 This is a software architecture team that is spending far too much time traveling the world. 
 
-Unless this is a very mature system that requires very little architectural work (in which case, maybe the team is overstaffed?), they will run into architectural difﬁculties.
+**Unless this is a very mature system that requires very little architectural work (in which case, maybe the team is overstaffed?), they will run into architectural difﬁculties.**
 
 ### Anti-pattern: Just consultants
 
@@ -113,7 +113,7 @@ Are they doing the job of the product deﬁnition team, or should they be simply
 
 There are many activities that a software architect performs. 
 
-A software architect typically works with project managers, discusses architecturally significant requirements with stakeholders, designs a software architecture, evaluates a design, communicates with designers and stakeholders, documents the architectural design and more.
+**A software architect typically works with project managers, discusses architecturally significant requirements with stakeholders, designs a software architecture, evaluates a design, communicates with designers and stakeholders, documents the architectural design and more.**
 
 **There are four core activities in software architecture design.** These core architecture activities are performed iteratively and at different stages of the initial **Software Development Life-Cycle (SDLC)**, as well as over the evolution of a system.
 
